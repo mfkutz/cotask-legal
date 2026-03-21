@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account – Shopsy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1a1918; color: #e5e7eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 40px 24px; }
+    .container { max-width: 680px; margin: 0 auto; }
+    .back { display: inline-flex; align-items: center; gap: 8px; color: #ED541F; text-decoration: none; font-size: 0.9rem; font-weight: 500; margin-bottom: 32px; }
+    .back:hover { opacity: 0.8; }
+    h1 { color: #ED541F; font-size: 2rem; margin-bottom: 8px; }
+    .meta { color: #a8a39e; font-size: 0.875rem; margin-bottom: 40px; }
+    h2 { color: white; font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; margin-top: 32px; }
+    p { color: #a8a39e; font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px; }
+    ol { color: #a8a39e; font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px; padding-left: 20px; }
+    ol li { margin-bottom: 8px; }
+    ul { color: #a8a39e; font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px; padding-left: 20px; }
+    ul li { margin-bottom: 6px; }
+    a { color: #ED541F; text-decoration: none; }
+    a:hover { opacity: 0.8; }
+    .divider { border: none; border-top: 1px solid #3a3835; margin: 16px 0; }
+    .warning { background: rgba(237,84,31,0.1); border: 1px solid rgba(237,84,31,0.3); border-radius: 12px; padding: 16px 20px; margin-top: 24px; }
+    .warning p { color: #e5e7eb; margin: 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">← Back</a>
+    <h1>Delete Account</h1>
+    <p class="meta">Shopsy – Account Deletion Request</p>
+
+    <p>You can permanently delete your Shopsy account and all associated data directly from within the app. This action is immediate and cannot be undone.</p>
+
+    <h2>How to delete your account</h2>
+    <ol>
+      <li>Open the Shopsy app on your device.</li>
+      <li>Tap the <strong>Profile</strong> tab at the bottom of the screen.</li>
+      <li>Scroll down to the <strong>Danger Zone</strong> section.</li>
+      <li>Tap <strong>Delete Account</strong>.</li>
+      <li>Confirm the action in the dialog that appears.</li>
+    </ol>
+
+    <p>Your account will be deleted immediately. You may be asked to sign in again before the deletion is processed, as required by Firebase for security purposes.</p>
+
+    <h2>What gets deleted</h2>
+    <ul>
+      <li>Your Firebase authentication account (email, display name, sign-in methods)</li>
+      <li>All shopping lists you created</li>
+      <li>All items within those lists</li>
+      <li>Your purchase history and smart suggestions data</li>
+      <li>Your push notification token</li>
+      <li>Your avatar preference and profile settings</li>
+    </ul>
+
+    <h2>What is retained</h2>
+    <ul>
+      <li>Lists that were shared with other users remain accessible to those users, but your authorship is anonymized</li>
+      <li>Subscription records are retained by RevenueCat as required for billing and refund purposes</li>
+    </ul>
+
+    <div class="warning">
+      <p>⚠️ Account deletion is permanent and cannot be undone. If you have an active subscription, cancel it through Google Play before deleting your account to avoid future charges.</p>
+    </div>
+
+    <hr class="divider" style="margin-top: 40px;" />
+    <p style="margin-top: 16px;">Questions? Contact us at <a href="mailto:martinkutzner@gmail.com">martinkutzner@gmail.com</a></p>
+  </div>
+</body>
+</html>
